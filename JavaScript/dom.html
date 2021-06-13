@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom测试</title>
+    <script>
+      function fun(){
+        var objname = document.getElementById("username");
+        var objspan = document.getElementById("userspan");
+        var patt = /^\w{5,12}$/;
+        if(patt.test(objname.value)){
+          // alert("用户名合法");
+            objspan.innerText = "用户名合法";
+        }else{
+          // alert("用户名不合法");
+            objspan.innerText = "用户名不合法";
+        }
+      }
+    </script>
+</head>
+<body>
+    <span>用户名</span><input type="text" id="username" value="name"/>
+    <span id="userspan" ></span>
+    <button onclick="fun()">校验</button>
+</body>
+</html>
