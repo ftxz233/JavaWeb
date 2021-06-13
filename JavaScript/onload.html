@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件测试</title>
+    <script type="text/javascript">
+        function onloadfun(){
+            alert("这是静态注册");
+        }
+        window.onload = function (){
+            alert("这是动态注册");
+        }
+    </script>
+    <script type="text/javascript">
+        function onclickfun(){
+            alert("这是静态注册点击事件");
+        }
+        window.onload = function (){
+            var obj = document.getElementById("2");
+            obj.onclick = function (){
+                alert("这是动态注册点击事件");
+            }
+        }
+    </script>
+</head>
+<body>
+        <button onclick="onclickfun();">按钮1</button>
+        <button id="2">按钮2</button>
+</body>
+</html>
