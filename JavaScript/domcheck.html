@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>check测试</title>
+    <script type="text/javascript">
+        function checkall(){
+            var obj = document.getElementsByName("hobby");
+            for(var i=0;i<obj.length;i++){
+                obj[i].checked = true;
+            }
+        }
+        function checknone(){
+            var obj = document.getElementsByName("hobby");
+            for(var i=0;i<obj.length;i++){
+                obj[i].checked = false;
+            }
+        }
+        function checkreverse(){
+            var obj = document.getElementsByName("hobby");
+            for(var i=0;i<obj.length;i++){
+                obj[i].checked = !obj[i].checked;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h5>兴趣爱好</h5>
+    <input type="checkbox" name="hobby" /><span>java</span>
+    <input type="checkbox" name="hobby" /><span>cpp</span>
+    <input type="checkbox" name="hobby" /><span>python</span><br/>
+    <button onclick="checkall()">全选</button>
+    <button onclick="checknone()">全不选</button>
+    <button onclick="checkreverse()">反选</button>
+</body>
+</html>
