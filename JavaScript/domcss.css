@@ -2,9 +2,18 @@ div{
     border: 1px solid yellowgreen;
     width: 500px;
 }
+#total{
+    border: 1px solid yellowgreen;
+    width: 500px;
+    height: 300px;
+
+}
 li{
     list-style: none;
     display: inline;
     border: 1px solid blueviolet;
     background-color: yellowgreen;
+    height: 50px;
+    width: 50px;
 }
+
